@@ -1,0 +1,15 @@
+﻿@*Type of model view expects to process*@
+@model IEnumerable<OdeToFood.Data.Models.Restaurant>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>OdeToFood</h1>
+    <h2>ASP.NET MVC 5 Restaurant Database</h2>
+    
+    <div>
+        @*Retrieve model data passed in, get count of restaurants*@
+        There are @Model.Count() restaurants in the database.
+    </div>
+</div>
